@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;;
+}
+
+.container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.content {
+	background-color: #fff;
+	border-radius: 15px;
+	width: 960px;s
+	height: 55%;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	position: relative;
+}
+
+.content::before {
+	content: "";
+	position: absolute;
+	background-color: #4682B4;
+	width: 	40%; /*** Largura **/
+	height: 100%; /*** Altura **/
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.title-primary {
+	color: #fff;
+}
+
+.title-second {
+	color: #4682B4;
+}
+
+.description {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.description-primary {
+	color: #fff;
+}
+
+.description-second {
+	color: #4682B4;
+}
+
+.btn {
+	border-radius: 15px;
+	text-trasform: uppercase;
+	color: #fff;
+	font-size: 10px;
+	padding: 10px 50px;
+	cursor: pointer;
+	font-weight: bold;
+	width: 150px;
+	align-self: center;
+	border-width: 0px;
+}
+
+.btn-primary {
+	background-color: transparent;
+	border: 1px solid #fff; 
+}
+
+.btn-primary:hover {
+	background-color: #fff;
+	color: #4682B4;
+}
+
+.btn-second {
+	background-color: #4682B4;
+	border: 1px solid #4682B4;
+}
+
+.btn-second:hover {
+	background-color: #fff;
+	border: 1px solid #4682B4;
+	color: #4682B4;
+}
+
+.first-content {
+	display: flex;
+}
+
+.first-column {
+	text-align: center;
+	flex: 1 0 auto;
+	z-index: 10;
+}
+
+.second-column {
+	flex: 2 0 auto;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-social-media{
+	display: flex;
+	list-style-type: none;
+
+}
+
+.item-social-media {
+	border: 1px solid #4682B4;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.item-social-media a{
+	color: #4682B4;
+
+}
+/*
+.social_image {
+	border: 1px solid #4682B4;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+
+	width: 30px;
+	line-height: 40px;
+}
+class não ultilizada*/
+.form{
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+}
+
+.form input {
+	height: 45px;
+	border: none;
+	background-color: #ecf0f1;
+	margin: 8px;
+}
+
+.second-content {
+	position: absolute;
+	display: none;
+}
