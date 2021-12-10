@@ -21,9 +21,8 @@ body {
 .content {
 	background-color: #fff;
 	border-radius: 15px;
-	width: 960px;s
+	width: 960px;
 	height: 55%;
-	display: flex;
 	justify-content: space-between;	
 	align-items: center;
 	position: relative;
@@ -35,6 +34,11 @@ body {
 	background-color: #4682B4;
 	width: 	40%; /*** Largura **/
 	height: 100%; /*** Altura **/
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+
+
+	left: 60%;
 }
 
 .title {
@@ -75,6 +79,7 @@ body {
 	width: 150px;
 	align-self: center;
 	border-width: 0px;
+	margin-top: 1rem;
 }
 
 .btn-primary {
@@ -100,6 +105,7 @@ body {
 
 .first-content {
 	display: flex;
+	display: none;
 }
 
 .first-column {
@@ -115,10 +121,17 @@ body {
     align-items: center;
 }
 
-.list-social-media{
+.social-media {
+	margin: 1rem 0;
+}
+
+.link-social-media {
+
+}
+
+.list-social-media {
 	display: flex;
 	list-style-type: none;
-
 }
 
 .item-social-media {
@@ -128,12 +141,22 @@ body {
 	height: 35px;
 	line-height: 35px;
 	text-align: center;
-}
-
-.item-social-media a{
 	color: #4682B4;
-
 }
+
+.link-social-media-n1{
+    margin-left: 0px;
+}
+.link-social-media-n{
+	margin-left: 10px;
+}
+
+.link-social-media:hover .item-social-media{
+	background-color: #4682B4;
+	color: #fff;
+	border-color: #4682B4;
+}
+
 /*
 .social_image {
 	border: 1px solid #4682B4;
@@ -149,16 +172,47 @@ class não ultilizada*/
 	display: flex;
 	flex-direction: column;
 	width: 55%;
+	text-align: center;
 }
 
 .form input {
 	height: 45px;
+	width: 100%;
 	border: none;
 	background-color: #ecf0f1;
+}
+
+.label-input {
+	background-color: #ecf0f1;
+	display: flex;
+	align-items: center;
 	margin: 8px;
+}
+
+.icon-modify {
+	color: #4682B4;
+	padding: 0 5px;
 }
 
 .second-content {
 	position: absolute;
-	display: none;
+	display: flex;
+}
+
+.second-content .first-column {
+	order: 2;
+}
+
+.second-content .second-column {
+	order: 1;
+}
+
+.password {
+	color: #FFFF00;
+	font-size: 14px;
+	margin: 15px 0;
+}
+
+.password::first-letter {
+	text-transform: capitalize;
 }
