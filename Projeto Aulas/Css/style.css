@@ -38,7 +38,7 @@ body {
 	border-bottom-left-radius: 15px;
 
 
-	left: 60%;
+	left: 0%;
 }
 
 .title {
@@ -84,7 +84,8 @@ body {
 
 .btn-primary {
 	background-color: transparent;
-	border: 1px solid #fff; 
+	border: 1px solid #fff;
+	transition: background-color .5s;
 }
 
 .btn-primary:hover {
@@ -95,6 +96,7 @@ body {
 .btn-second {
 	background-color: #4682B4;
 	border: 1px solid #4682B4;
+	transition: background-color .5s;
 }
 
 .btn-second:hover {
@@ -105,17 +107,20 @@ body {
 
 .first-content {
 	display: flex;
-	display: none;
+}
+
+.first-content .second-column {
+	z-index: 12;
 }
 
 .first-column {
 	text-align: center;
-	flex: 1 0 auto;
+	width: 40%;
 	z-index: 10;
 }
 
 .second-column {
-	flex: 2 0 auto;
+	width: 60%;
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,8 +130,8 @@ body {
 	margin: 1rem 0;
 }
 
-.link-social-media {
-
+.link-social-media .item-social-media {
+    transition: background-color 1s;
 }
 
 .list-social-media {
@@ -168,6 +173,7 @@ body {
 	line-height: 40px;
 }
 class não ultilizada*/
+
 .form{
 	display: flex;
 	flex-direction: column;
@@ -180,6 +186,12 @@ class não ultilizada*/
 	width: 100%;
 	border: none;
 	background-color: #ecf0f1;
+}
+
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .label-input {
@@ -201,10 +213,12 @@ class não ultilizada*/
 
 .second-content .first-column {
 	order: 2;
+	z-index: -1;
 }
 
 .second-content .second-column {
 	order: 1;
+	z-index: -1;
 }
 
 .password {
@@ -216,3 +230,30 @@ class não ultilizada*/
 .password::first-letter {
 	text-transform: capitalize;
 }
+/* CLASSES JAVASCRIPT ACESSAR A CONTA*/
+.login-acessar-js .first-content .first-column,
+.login-acessar-js .first-content .second-column {
+	z-index: -1;
+}
+
+.login-acessar-js .second-content .first-column,
+.login-acessar-js .second-content .second-column {
+	z-index: 11;
+}
+
+.login-acessar-js .content::before {
+	left: 60%;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+/* CLASSES JAVASCRIPT CRIAR CONTA*/
+.login-criar-js .second-content .first-column,
+.login-criar-js .second-content .second-column {
+	z-index: -1;
+}
+
+.login-criar-js .first-content .first-column,
+.login-criar-js .first-content .second-column {
+	z-index: 11;
