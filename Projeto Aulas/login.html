@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,13 +13,13 @@
 	<div class="container">
 		<div class="content first-content">
 			<div class="first-column">
-				<h2 class="title title-primary">Welcome Back!</h2>
-					<p class="description description-primary">To Keep Connected With Us</p>
-					<p class="description description-primary">Please Login With Your Personal Info</p>
-				<button id="login-access-js" class="btn btn-primary">sign in</button>
+				<h2 class="title title-primary">Bem Vindo!</h2>
+					<p class="description description-primary">Para se conectar</p>
+					<p class="description description-primary">Logue com seus dados</p>
+				<button id="login-access-js" class="btn btn-primary">Logar</button>
 			</div> <!-- Primeira Coluna-->
 			<div class="second-column">
-				<h2 class="title title-second">Create Account</h2>
+				<h2 class="title title-second">Criar Conta</h2>
 				<div class="social-media">
 					<ul class="list-social-media">
 						<a class="link-social-media link-social-media-n1" href="#">
@@ -37,22 +38,22 @@
 					</ul>
 				</div>
 					<p class="description description-second">Ou cadastre-se para se conectar!</p>
-					<form class="form">
+					<form class="form" type="text" method="post" action="php/valida.php">
 						<label class="label-input" for="">
 							<i class="far fa-user icon-modify"></i>
-							<input type="text" placeholder="Nome" name="" id="">
+							<input type="text" name="aluno" placeholder="Nome" name="" id="">
 						</label>
 
 						<label class="label-input" for="">
 							<i class="fas fa-envelope icon-modify"></i>
-							<input type="email" placeholder="Email" name="" id="">
+							<input type="email" name="email" placeholder="Email" name="" id="">
 						</label>
 
 						<label class="label-input" for="">
 							<i class="fas fa-lock icon-modify"></i>
-							<input type="password" placeholder="Senha" name="" id="">
+							<input type="password" name="senha" placeholder="Senha" name="" id="">
 						</label>
-						<button class="btn btn-second">Sign Up</button>
+						<button type="submit" name="btnCadUsuario" class="btn btn-second">Sign Up</button>
 					</form>
 			</div> <!-- Segunda Coluna-->
 		</div>
